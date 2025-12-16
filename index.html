@@ -1,31 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Ann Maria | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f9;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin: 6px 6px 0 0;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hi, I'm Ann Maria 👋</h1>
-  <p>First-year IT student learning Python and DSA.</p>
+  <div class="container">
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <b>Select and Speak Chrome Extension</b><br>
-      <a href="https://github.com/its-annmaria/select-and-speak">
-        View on GitHub
+    <h1>Hi, I'm Ann Maria 👋</h1>
+    <p class="subtitle">
+      First-year IT student exploring Python, DSA, and building small but cool things.
+    </p>
+
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Select & Speak – Chrome Extension</h3>
+      <p>
+        A Chrome extension that reads selected text aloud using the browser’s TTS API.
+      </p>
+      <a href="https://github.com/annmariatech/select-and-speak">
+        View on GitHub →
       </a>
-    </li>
-  </ul>
+    </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>Basic DSA</li>
-  </ul>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li>
+      <li>Basic DSA</li>
+      <li>HTML</li>
+      <li>JavaScript</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>
-    GitHub: <a href="https://github.com/its-annmaria"> its-annmaria </a>
-  </p>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        GitHub: 
+        <a href="https://github.com/annmariatech">
+          @annmariatech
+        </a>
+      </p>
+    </div>
+
+    <footer>
+      built with caffeine + curiosity ☕
+    </footer>
+
+  </div>
 </body>
 </html>
